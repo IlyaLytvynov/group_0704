@@ -6,4 +6,9 @@ a {
   text-decoration: none;
   display: block;
   text-align: center;
+  color: #3b3b3b;
+}
+
+a:hover {
+  color: #000000;
 }
