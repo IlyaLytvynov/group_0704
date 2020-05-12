@@ -1,0 +1,83 @@
+:root {
+  --baner-text-blocks-margin-top: 41px;
+  --button-text-color: #272727;
+}
+
+.baner-section {
+  background-color: var(--header-bg-color);
+  min-height: 300px;
+}
+
+.baner-section > .page-content {
+  display: flex;
+}
+
+.baner-column {
+  position: relative;
+}
+
+.baner-column:first-child {
+  width: 30%;
+}
+
+.baner-column:last-child {
+  width: 70%;
+  overflow: hidden;
+}
+
+.baner-image {
+  width: 100%;
+  display: block;
+  transform: translateY(10px);
+}
+
+.baner-text {
+  position: absolute;
+  z-index: 1;
+  width: 400px;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+}
+
+.baner-title {
+  font-weight: 400;
+  font-size: var(--main-header-font-size);
+}
+
+.baner-description {
+  margin-top: var(
+    --baner-text-blocks-margin-top
+  ); /* 68/25 = 2.72 * 15 = 40.8 */
+  font-weight: 300;
+}
+
+.baner-action-buttons {
+  display: flex;
+}
+
+.action-button {
+  background: transparent;
+  border: 1px solid var(--button-text-color);
+  border-radius: 60px;
+  color: var(--button-text-color);
+  margin-top: var(--baner-text-blocks-margin-top);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 18px;
+}
+
+.icon {
+  font-size: 28px;
+  margin-right: 8px;
+  color: var(--button-text-color);
+}
+
+.action-button:hover {
+  --button-text-color: red;
+}
+
+.action-button:first-child {
+  margin-right: 36px;
+}

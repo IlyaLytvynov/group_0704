@@ -1,0 +1,34 @@
+.thumbnail {
+  background: aqua;
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+.thumbnail-img {
+  height: 100%;
+  background: yellow;
+}
+.thumbnail-details {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.thumbnail-btn {
+  background-color: #00ffff;
+  border: 1px solid #00ffff;
+}
+.thumbnail-btn:hover {
+  background-color: #00cccc;
+  border: 1px solid #00cccc;
+}
+
+@media (max-width: 767px) {
+  .thumbnail {
+    height: 250px;
+  }
+}
+
+/*# sourceMappingURL=content.css.map */

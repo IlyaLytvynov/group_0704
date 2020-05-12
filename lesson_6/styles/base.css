@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: var(--base-font-size);
+  font-family: var(--base-font-family);
+  color: var(--base-text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+button {
+  font-size: var(--base-font-size);
+}
+
+.page-content {
+  max-width: var(--page-content-max-width);
+  width: 100%;
+  margin: 0 var(--page-spacing);
+}
+
+.page-section {
+  display: flex;
+  justify-content: center;
+}
+
+.text-light {
+  font-weight: 300;
+}
+
+.text-regular {
+  font-weight: 400;
+}
+
+.text-bold {
+  font-weight: 600;
+}

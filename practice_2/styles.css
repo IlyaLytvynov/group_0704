@@ -1,0 +1,29 @@
+body {
+  background-color: #253e52;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+.modal {
+  width: 500px;
+  padding: 20px;
+  background: white;
+}
+
+.image-list {
+  border: 1px solid red;
+  text-align: center;
+}
+
+.image-wrapper {
+  display: inline-block;
+  width: 20%;
+}
+
+.image-wrapper > img {
+  width: 100%;
+  text-align: center;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 2</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <form action="" class="comments-form">
+      <h2 class="form-header">Comments form</h2>
+      <div>
+        <input type="text" class="form-field" placeholder="Name" />
+      </div>
+      <div>
+        <textarea name="text" cols="30" rows="10" class="form-field"></textarea>
+      </div>
+      <div>
+        <h2>Choose color:</h2>
+        <label for="red-color" class="checkbox">
+          <input class="real-input" id="red-color" type="checkbox" checked />
+          <span class="visible-checkbox red"></span>
+        </label>
+        <label for="green-color" class="checkbox">
+          <input class="real-input" id="green-color" type="checkbox" checked />
+          <span class="visible-checkbox green"></span>
+        </label>
+        <label for="yello-color" class="checkbox">
+          <input class="real-input" id="yello-color" type="checkbox" checked />
+          <span class="visible-checkbox yellow"></span>
+        </label>
+      </div>
+      <div class="button-wrapper">
+        <button class="btn">ADD</button>
+      </div>
+    </form>
+  </body>
+</html>

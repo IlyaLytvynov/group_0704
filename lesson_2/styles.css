@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Селектор способ выбора элемента из html */
+body {
+  background: #00466d;
+}
+
+.comments-form {
+  width: 340px;
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  border-radius: 9px;
+  margin: auto;
+}
+
+.form-header {
+  color: #434444;
+  text-align: center;
+}
+
+.form-field {
+  width: 305px;
+  height: 25px;
+  background: #f1f1f1;
+  border-radius: 5px;
+  border: none;
+}
+
+textarea.form-field {
+  height: 106px;
+}
+/* Селектор дочерних элементов */
+.comments-form div {
+  margin-left: 18px;
+  margin-top: 5px;
+}
+
+div.button-wrapper {
+  margin-top: 23px;
+  margin-bottom: 17px;
+}
+
+.btn {
+  width: 305px;
+  height: 35px;
+  border: none;
+  background: #43cc51;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.colors-checkbox:checked::after {
+  content: '1';
+}
+
+.checkbox {
+  position: relative;
+  display: inline-block;
+}
+
+.visible-checkbox {
+  --size: 15px;
+  border: 1px solid grey;
+  border-radius: 2px;
+  width: var(--size);
+  height: var(--size);
+  display: block;
+  position: relative;
+}
+
+.visible-checkbox.red {
+  border-color: red;
+}
+
+.visible-checkbox.green {
+  border-color: green;
+}
+
+.visible-checkbox.yellow {
+  border-color: yellow;
+}
+
+.visible-checkbox:after {
+  content: '+';
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.real-input {
+  position: absolute;
+  top: 0px;
+  z-index: -1;
+  left: 0;
+  opacity: 0;
+}
+
+.real-input:checked + .visible-checkbox.red {
+  --bg-color: red;
+  background-color: var(--bg-color);
+  border-color: var(--bg-color);
+  color: #fff;
+}
+
+.real-input:checked + .visible-checkbox.yellow {
+  --bg-color: yellow;
+  background-color: var(--bg-color);
+  border-color: var(--bg-color);
+  color: #fff;
+}
+
+.real-input:checked + .visible-checkbox.green {
+  --bg-color: green;
+  background-color: var(--bg-color);
+  border-color: var(--bg-color);
+  color: #fff;
+}
+
+.real-input:checked + .visible-checkbox:after {
+  content: '-';
+  position: absolute;
+  top: 51%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

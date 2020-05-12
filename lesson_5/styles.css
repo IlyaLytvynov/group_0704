@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --base-text-color: #292325;
+  --header-bg-color: #fede60;
+}
+
+html {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--base-text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.page-content {
+  max-width: 960px;
+  width: 100%;
+}
+
+.page-header {
+  background-color: var(--header-bg-color);
+  height: 40px;
+}
+
+.page-section {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  background: green;
+}
+
+.page-header > .page-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-item {
+  margin-right: 27px;
+  display: flex;
+  align-items: center;
+  color: var(--base-text-color);
+}
+
+.nav-item:last-child {
+  margin-right: 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.baner-section {
+  background-color: var(--header-bg-color);
+}
+
+.baner-section > .page-content {
+  display: flex;
+}
+
+.baner-column {
+  position: relative;
+}
+
+.baner-column:first-child {
+  width: 30%;
+}
+
+.baner-column:last-child {
+  width: 70%;
+}
+
+.baner-image {
+  width: 100%;
+  display: block;
+}
+
+.baner-text {
+  position: absolute;
+  width: 400px;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+}

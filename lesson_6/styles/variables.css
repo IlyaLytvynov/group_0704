@@ -1,0 +1,9 @@
+:root {
+  --page-content-max-width: 960px;
+  --page-spacing: 8px;
+  --base-text-color: #333333;
+  --header-bg-color: #fede60;
+  --base-font-size: 15px;
+  --base-font-family: 'Source Sans Pro', sans-serif;
+  --main-header-font-size: 36px;
+}

@@ -1,0 +1,47 @@
+@import './variables';
+
+@mixin absoluteCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin flexHorizontalCenter {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin borderedBgColor($color) {
+  background-color: $color;
+  border: 1px solid $color;
+  &:hover {
+    background-color: darken($color, 10%);
+    border: 1px solid darken($color, 10%);
+  }
+}
+
+@mixin test {
+  background: red;
+  &:active {
+    @content;
+  }
+}
+
+@mixin tablets {
+  @media (max-width: $md-screen) {
+    @content;
+  }
+}
+
+@mixin phablet {
+  @media (max-width: $sm-screen) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: $xs-screen) {
+    @content;
+  }
+}

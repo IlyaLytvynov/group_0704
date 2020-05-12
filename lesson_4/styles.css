@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #292325;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.page-nav {
+  text-align: center;
+  height: 90px;
+  border-bottom: 2px solid #131313;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.page-link {
+  color: #131313;
+  display: inline-block;
+  margin: 0 20px;
+  line-height: 90px;
+}
+
+.page-link.active {
+  color: rgb(98, 98, 98);
+}
+
+.page-link:hover {
+  color: rgb(98, 98, 98);
+}
+
+.page-link:focus {
+  color: green;
+}
+
+.page-link:active {
+  color: red;
+}
+
+.page-content {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.field {
+  outline: none;
+}
+.field:hover {
+  border: 2px solid red;
+}
+
+.field:focus {
+  border: 2px solid yellow;
+}
+
+.field:active {
+  border: 2px solid blue;
+}
+
+.list-item:hover::after {
+  content: '+';
+  font-size: 25px;
+  color: light-green;
+  border: 1px solid green;
+}
+
+.page-content {
+  background: red;
+  min-height: calc(100vh - 90px);
+}
+
+.promotion-baner {
+  font-size: 0;
+}
+
+.baner-item {
+  font-size: 15px;
+  height: 680px;
+  width: calc(33.3333% - 16px);
+  display: inline-block;
+  margin: 0 8px;
+  position: relative;
+  text-align: center;
+}
+
+.page-footer {
+  height: 100px;
+  background: #292325;
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+.item-description {
+  position: absolute;
+  top: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.action-button {
+  display: block;
+  width: 150px;
+  color: #292325;
+  margin: 40px auto 0;
+  padding: 12px 20px;
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.action-button:hover {
+  border-color: #292325;
+}
+
+.baner-item.colored {
+  background-color: #f7eae4;
+}
+
+.baner-item.with-image {
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
+/* .baner-item:first-child {
+  background-image: url(./assets/images/1.jpg);
+} */
+
+/* .baner-item:last-child {
+  background-image: url(./assets/images/2.jpg);
+} */

@@ -1,0 +1,58 @@
+@import './variables';
+
+$column-count: 12;
+$column-width: 100% / $column-count; // 8.333%
+$grid-spacing: 6px;
+
+.grid-view {
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  padding: $grid-spacing;
+}
+
+[class*='col-'] {
+  flex-grow: 0;
+  flex-shrink: 0;
+  min-height: 50px;
+  padding: $grid-spacing;
+}
+
+@for $i from 1 through $column-count {
+  .col-#{$i} {
+    width: $column-width * $i;
+  }
+}
+
+@media (max-width: $lg-screen) {
+  @for $i from 1 through $column-count {
+    .col-lg-#{$i} {
+      width: $column-width * $i;
+    }
+  }
+}
+
+@media (max-width: $md-screen) {
+  @for $i from 1 through $column-count {
+    .col-md-#{$i} {
+      width: $column-width * $i;
+    }
+  }
+}
+
+@media (max-width: $sm-screen) {
+  @for $i from 1 through $column-count {
+    .col-sm-#{$i} {
+      width: $column-width * $i;
+    }
+  }
+}
+
+@media (max-width: $xs-screen) {
+  @for $i from 1 through $column-count {
+    .col-xs-#{$i} {
+      width: $column-width * $i;
+    }
+  }
+}

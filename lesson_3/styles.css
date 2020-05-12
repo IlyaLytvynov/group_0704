@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.page-nav {
+  text-align: center;
+  height: 90px;
+  border-bottom: 2px solid #131313;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.page-link {
+  color: #131313;
+  display: inline-block;
+  margin: 0 20px;
+  line-height: 90px;
+}
+
+.page-link.active {
+  color: rgb(98, 98, 98);
+}
+
+.page-link:hover {
+  color: rgb(98, 98, 98);
+}
+
+.page-link:focus {
+  color: green;
+}
+
+.page-link:active {
+  color: red;
+}
+
+.page-content {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.field {
+  outline: none;
+}
+.field:hover {
+  border: 2px solid red;
+}
+
+.field:focus {
+  border: 2px solid yellow;
+}
+
+.field:active {
+  border: 2px solid blue;
+}
+
+.list-item:hover::after {
+  content: '+';
+  font-size: 25px;
+  color: light-green;
+  border: 1px solid green;
+}

@@ -1,0 +1,26 @@
+@import './mixins';
+
+.thumbnail {
+  background: aqua;
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  &-img {
+    height: 100%;
+    background: yellow;
+  }
+  &-details {
+    @include absoluteCenter;
+  }
+  &-btn {
+    @include borderedBgColor(#00ffff);
+  }
+}
+
+@media (max-width: 767px) {
+  .thumbnail {
+    height: 250px;
+  }
+}

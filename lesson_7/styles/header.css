@@ -1,0 +1,42 @@
+.page-header {
+  background-color: var(--header-bg-color);
+  height: 40px;
+}
+
+.logo {
+  width: 40px;
+}
+
+.logo > img {
+  width: 100%;
+  display: block;
+}
+
+.page-header > .page-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-item {
+  margin-right: 27px;
+  display: flex;
+  align-items: center;
+  color: var(--base-text-color);
+}
+
+.nav-item:last-child {
+  margin-right: 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+}
