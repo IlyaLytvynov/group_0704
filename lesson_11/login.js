@@ -1,6 +1,12 @@
-const loginBtn = document.querySelector('#logInBtn');
+const loginBtn = document.querySelector('#logInBtn'); // Single element
+
 function login() {
   const userName = prompt('Enter user name');
+  loginBtn.style.backgroundColor = 'red';
+  loginBtn.style.fontSize = '20px';
+
+  loginBtn.classList.remove('active'); // удалить класс
+  loginBtn.classList.add('active'); // добавить класс
 
   if (userName === 'admin') {
     const password = prompt('Enter password');
