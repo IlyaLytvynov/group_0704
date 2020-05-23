@@ -1,0 +1,56 @@
+.btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(87, 160, 81);
+  box-shadow: 1px 1px 1px black;
+}
+
+.dropdown {
+  position: relative;
+  width: 300px;
+}
+
+.dropdown__toggle {
+  box-sizing: border-box;
+  border: none;
+  background: #83b5f7;
+  padding: 10px 10px;
+  width: 100%;
+  display: block;
+  text-align: left;
+}
+
+.dropdown__list {
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  transform: translateY(100%);
+  background: #efefef;
+  width: 100%;
+  box-shadow: 0px 3px 7px 1px #0000004f;
+  list-style: none;
+  margin: 0;
+  opacity: 0;
+  visibility: hidden;
+  padding: 0;
+}
+
+.list-item > button {
+  box-sizing: border-box;
+  border: none;
+  width: 100%;
+  display: block;
+  text-align: left;
+  background-color: #efefef;
+  padding: 10px;
+}
+
+.list-item > button:hover {
+  background-color: #82d3ad;
+}
+
+.dropdown__list.active {
+  opacity: 1;
+  visibility: visible;
+}
