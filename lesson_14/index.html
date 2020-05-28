@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./styles/commentsForm.css" />
+    <style>
+      .parent {
+        width: 600px;
+
+        background: red;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .child {
+        width: 100px;
+        height: 100px;
+        border: 1px solid green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="root"></div>
+
+    <div class="parent">
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+    </div>
+    <script>
+      const parent = document.querySelector('.parent');
+
+      for (let i = 0; i < 10000; i++) {
+        const child = document.createElement('div');
+        child.classList.add('child');
+        parent.append(child);
+      }
+
+      parent.addEventListener('click', (eventObject) => {
+        console.log('PARENT', eventObject);
+        eventObject.target.style.backgroundColor = 'yellow';
+      });
+    </script>
+    <script src="./scrypts.js" type="module"></script>
+  </body>
+</html>

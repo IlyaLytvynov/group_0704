@@ -1,0 +1,43 @@
+.comments-form {
+  width: 500px;
+  margin: 0 auto;
+  border: 1px solid #efefef;
+  border-radius: 7px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.comments-form__field {
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #efefef;
+  outline: none;
+  padding: 0;
+  margin: 10px 0;
+  padding: 10px;
+}
+.comments-form__field:focus {
+  border: 1px solid blue;
+}
+.comments-form__control {
+  --btn-bg-color: #64b972;
+  width: 100%;
+  border: 1px solid var(--btn-bg-color);
+  background-color: var(--btn-bg-color);
+  color: #fff;
+  padding: 15px;
+}
+
+.comment {
+  width: 500px;
+  padding: 20px;
+  border: 1px solid #efefef;
+  border-radius: 7px;
+  margin: 20px auto;
+}
+.comment__author {
+  text-align: right;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/*# sourceMappingURL=commentsForm.css.map */
