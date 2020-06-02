@@ -1,0 +1,29 @@
+:root {
+  --btn_bg-color-default: #b8b8b8;
+  --btn_bg-color-success: #98ff85;
+}
+.btn {
+  border: none;
+  background: transparent;
+  font-size: 1rem;
+  outline: none;
+  padding: 20px 10px;
+}
+
+.btn_default {
+  border: 1px solid var(--btn_bg-color-default);
+  background: var(--btn_bg-color-default);
+}
+
+.btn_success {
+  border: 1px solid var(--btn_bg-color-success);
+  background: var(--btn_bg-color-success);
+}
+
+.btn_success:hover {
+  --btn_bg-color-success: #6cad61;
+}
+
+.btn_default:hover {
+  --btn_bg-color-default: #efefef;
+}
