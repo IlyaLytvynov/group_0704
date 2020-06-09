@@ -1,0 +1,23 @@
+{
+  "name": "ads-box-server",
+  "version": "1.0.0",
+  "description": "Для использования установить `https://github.com/typicode/json-server`  ### Запуск  `npm `",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "json-server --watch db.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IlyaLytvynov/ads-box-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IlyaLytvynov/ads-box-server/issues"
+  },
+  "homepage": "https://github.com/IlyaLytvynov/ads-box-server#readme",
+  "dependencies": {
+    "json-server": "^0.15.1"
+  }
+}

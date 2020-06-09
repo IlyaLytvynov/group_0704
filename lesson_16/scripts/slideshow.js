@@ -15,6 +15,7 @@ export class SlideShow {
     );
     xhr.send();
     xhr.onload = () => {
+      // async
       console.log(this); /// SlideShow
 
       const data = JSON.parse(xhr.response);
