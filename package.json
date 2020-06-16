@@ -1,0 +1,22 @@
+{
+  "name": "group_0704",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -c-1 ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IlyaLytvynov/group_0704.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IlyaLytvynov/group_0704/issues"
+  },
+  "homepage": "https://github.com/IlyaLytvynov/group_0704#readme",
+  "dependencies": {
+    "http-server": "^0.12.3"
+  }
+}

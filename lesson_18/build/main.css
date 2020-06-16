@@ -1,0 +1,22 @@
+.drop-down {
+  position: relative;
+  width: 300px;
+  background: red;
+}
+.drop-down__title {
+  height: 30px;
+  line-height: 30px;
+}
+.drop-down__options {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 30px;
+  background: green;
+  width: 100%;
+}
+.drop-down__item_active {
+  background: yellow;
+}
+
+/*# sourceMappingURL=main.css.map*/
